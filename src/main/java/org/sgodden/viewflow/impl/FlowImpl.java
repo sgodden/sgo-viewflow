@@ -25,6 +25,9 @@ import org.sgodden.viewflow.config.Transition;
 public class FlowImpl implements Flow {
 
     private static final transient Log log = LogFactory.getLog(FlowImpl.class);
+    
+    private String name;
+    
     /**
      * A simple internal variable to tell us whether we are being invoked for
      * the first time.
@@ -511,5 +514,13 @@ public class FlowImpl implements Flow {
         else {
             variables.remove(name);
         }
+    }
+    
+    public String getName() {
+    	return name; 
+    }
+    
+    public void setName(String name) {
+    	this.name = name;
     }
 }
