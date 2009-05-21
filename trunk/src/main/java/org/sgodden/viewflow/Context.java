@@ -205,5 +205,13 @@ public class Context
     public void setFlowVariable(String name, Object value) {
         flow.setVariable(name, value);
     }
+ 
+    /**
+     * Returns the currently executing flow.
+     * @return the currently executing flow.
+     */
+    public Flow getFlow() {
+    	return flow;
+    }
 
 }

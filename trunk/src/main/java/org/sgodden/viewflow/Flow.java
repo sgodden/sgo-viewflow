@@ -76,5 +76,20 @@ public interface Flow
      * @return an unmodifiable map of flow variables.
      */
     public Map < String, Object > getVariables();
+    
+    /**
+     * Returns the name of the flow, or <code>null</code> if one
+     * has not been set.
+     * @return the name of the flow, or <code>null</code> if one
+     * has not been set.
+     */
+    public String getName();
+    
+    /**
+     * Sets the name of the flow.  This is not necessary for internal operation,
+     * but is useful in many scenarios.
+     * @param name the name of the flow.
+     */
+    public void setName(String name);
 
 }
