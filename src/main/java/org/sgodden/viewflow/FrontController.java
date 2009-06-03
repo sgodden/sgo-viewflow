@@ -106,7 +106,7 @@ public class FrontController
             try {
                 newResolutionName = (String) m.invoke(controller, (Object[])null);
             } catch (Exception e) {
-                throw new Error("Error invoking controller", e);
+                throw new RuntimeException("Error invoking controller", e);
             }
 
             if (newResolutionName != null) {

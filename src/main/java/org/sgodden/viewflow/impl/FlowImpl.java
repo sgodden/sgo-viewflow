@@ -145,7 +145,7 @@ public class FlowImpl implements Flow {
                     m.invoke(controller, (Object[]) null);
                 }
                 catch (Exception e) {
-                    throw new Error("Error invoking controller method: "
+                    throw new RuntimeException("Error invoking controller method: "
                             + methodString, e);
                 }
             }
@@ -295,7 +295,7 @@ public class FlowImpl implements Flow {
                                 target.getName(), target.getDescription()));
             }
             catch (Exception e) {
-                throw new Error("Error trying to instantiate the "
+                throw new RuntimeException("Error trying to instantiate the "
                         + "next flow: " + target.getSubFlowName(), e);
             }
         }

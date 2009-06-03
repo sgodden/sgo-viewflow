@@ -88,7 +88,7 @@ public class Context
 			try {
 				ret = PropertyUtils.getNestedProperty(o, propertyPath);
 			} catch (Exception e) {
-				throw new Error("Error evaluating expression: " + expression, e);
+				throw new RuntimeException("Error evaluating expression: " + expression, e);
 			} 
 		}
 		else {
