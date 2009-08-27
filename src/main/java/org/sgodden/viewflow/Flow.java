@@ -91,5 +91,4 @@ public interface Flow
      * @param name the name of the flow.
      */
     public void setName(String name);
-
 }
