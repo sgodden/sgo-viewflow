@@ -81,7 +81,8 @@ public class Main {
      * @param scriptName the groovy script name.
      * @return a new instance of the class defined in the script.
      */
-    private static Object getGroovyObjectInstance(String scriptName) {
+    @SuppressWarnings("unchecked")
+	private static Object getGroovyObjectInstance(String scriptName) {
         Object ret = null;
         try {
             Class clazz = groovyScriptEngine.loadScriptByName(scriptName);

@@ -16,6 +16,7 @@
  # ================================================================= */
 package org.sgodden.viewflow;
 
+import java.io.Serializable;
 import java.util.Map;
 
 /**
@@ -42,7 +43,7 @@ import java.util.Map;
  *
  */
 public interface Flow 
-		extends NamedObjectResolver {
+		extends NamedObjectResolver, Serializable {
 	
 	/**
 	 * Returns the next flow resolution.

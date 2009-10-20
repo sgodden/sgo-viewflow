@@ -16,13 +16,15 @@
  # ================================================================= */
 package org.sgodden.viewflow;
 
+import java.io.Serializable;
+
 /**
  * Generic base interface for a model.
  * 
  * @author sgodden
  *
  */
-public interface Model {
+public interface Model extends Serializable {
 	
 	/**
 	 * Adds a listener to be notified when this model changes.
