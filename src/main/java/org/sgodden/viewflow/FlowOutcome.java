@@ -16,6 +16,8 @@
  # ================================================================= */
 package org.sgodden.viewflow;
 
+import java.io.Serializable;
+
 
 /**
  * Encapsulates the outcome of a step in the flow.
@@ -31,7 +33,7 @@ package org.sgodden.viewflow;
  * @author goddens
  *
  */
-public interface FlowOutcome {
+public interface FlowOutcome extends Serializable {
 
     /**
      * Returns the flow which caused this outcome.

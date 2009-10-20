@@ -19,6 +19,9 @@ class ControllerFlowOutcomeImpl
 	    extends FlowOutcomeImpl
         implements ControllerFlowOutcome {
 
+	private static final long serialVersionUID = 20091020L;
+	
+	// FIXME - should be a serializable, not an object
 	private Object controller;
 	private String methodName;
 

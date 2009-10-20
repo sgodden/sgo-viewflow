@@ -1,5 +1,7 @@
 package org.sgodden.viewflow.config;
 
+import java.io.Serializable;
+
 import org.sgodden.viewflow.impl.Guard;
 
 /**
@@ -7,8 +9,11 @@ import org.sgodden.viewflow.impl.Guard;
  * @author sgodden
  *
  */
-public class Transition {
-    private String on;
+public class Transition implements Serializable {
+	
+	private static final long serialVersionUID = 20091020L;
+	
+	private String on;
     private String to;
     private Guard guard;
     private String[] controllerMethods;

@@ -33,7 +33,9 @@ import org.sgodden.viewflow.impl.FlowImpl;
 public class FrontController 
 		implements ResolutionHandler {
 
-    private static final transient Log log = LogFactory.getLog(FrontController.class);
+	private static final long serialVersionUID = 20091020L;
+
+	private static final transient Log log = LogFactory.getLog(FrontController.class);
 
     private Container container;
 	private FlowOutcome previousFlowOutcome;

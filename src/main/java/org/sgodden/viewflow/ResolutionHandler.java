@@ -16,12 +16,14 @@
  # ================================================================= */
 package org.sgodden.viewflow;
 
+import java.io.Serializable;
+
 /**
  * An object responsible for handling named resolutions that occur within views.
  * <p/>
  * FIXME - should probably actually be called ViewResolutionHandler.
  */
-public interface ResolutionHandler {
+public interface ResolutionHandler extends Serializable {
 	
 	public void handleResolution(String resolution);
 
