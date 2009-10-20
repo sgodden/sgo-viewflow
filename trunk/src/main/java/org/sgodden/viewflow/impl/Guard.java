@@ -1,5 +1,7 @@
 package org.sgodden.viewflow.impl;
 
+import java.io.Serializable;
+
 import org.sgodden.viewflow.Context;
 
 /**
@@ -8,7 +10,7 @@ import org.sgodden.viewflow.Context;
  * @author sgodden
  *
  */
-public interface Guard {
+public interface Guard extends Serializable {
 	
     /**
      * Returns whether this mapping should be selected.

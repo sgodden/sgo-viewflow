@@ -1,5 +1,6 @@
 package org.sgodden.viewflow.config;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -11,9 +12,11 @@ import java.util.Set;
  * @author sgodden
  *
  */
-public class FlowStep {
+public class FlowStep implements Serializable {
     
-    private Set < String > availableResolutions = new HashSet < String >();
+	private static final long serialVersionUID = 20091020L;
+	
+	private Set < String > availableResolutions = new HashSet < String >();
     private String controllerMethod;
     private String controllerName;
     private String description;

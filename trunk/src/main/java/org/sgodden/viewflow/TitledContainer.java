@@ -1,10 +1,12 @@
 package org.sgodden.viewflow;
 
+import java.io.Serializable;
+
 /**
  * A container capable of displaying a title.
  * @author sgodden
  */
-public interface TitledContainer {
+public interface TitledContainer extends Serializable {
 
     /**
      * Sets the title of the container.
