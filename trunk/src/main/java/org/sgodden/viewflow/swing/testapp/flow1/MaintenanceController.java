@@ -27,7 +27,6 @@ import org.sgodden.viewflow.ContextAware;
 public class MaintenanceController implements ContextAware {
 	
 	private boolean fail = false;
-    private boolean valid = true;
     private static final Logger log = Logger.getLogger
             (MaintenanceController.class);
     
@@ -56,11 +55,9 @@ public class MaintenanceController implements ContextAware {
     }
 
 	public void setValidationFailed() {
-		this.valid = false;
 	}
 
     public void setValidationSucceeded() {
-        this.valid = true;
     }
 
     public void setContext(Context context) {

@@ -37,6 +37,8 @@ public class DialogViewImpl
 	extends JDialog 
 	implements DialogView {
 	
+	private static final long serialVersionUID = 20091020L;
+	
 	private List<DialogListener> listeners = new ArrayList<DialogListener>();
 	private View innerView;
 	

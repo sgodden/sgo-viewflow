@@ -16,6 +16,7 @@
  # ================================================================= */
 package org.sgodden.viewflow;
 
+import java.io.Serializable;
 import java.util.Map;
 import java.util.Set;
 
@@ -36,9 +37,11 @@ import org.sgodden.viewflow.messages.MessageModel;
  *
  */
 public class Context 
-		implements ResolutionHandler {
+		implements ResolutionHandler, Serializable {
 	
-    private static final transient Logger log = Logger.getLogger(Context.class);
+	private static final long serialVersionUID = 20091020L;
+
+	private static final transient Logger log = Logger.getLogger(Context.class);
 
 	private Flow flow;
     private MessageModel messageModel = new DefaultMessageModel();

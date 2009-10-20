@@ -24,7 +24,9 @@ import org.sgodden.viewflow.config.Transition;
  */
 public class FlowImpl implements Flow {
 
-    private static final transient Log log = LogFactory.getLog(FlowImpl.class);
+	private static final long serialVersionUID = 20091020L;
+
+	private static final transient Log log = LogFactory.getLog(FlowImpl.class);
     
     private String name;
     
@@ -192,7 +194,6 @@ public class FlowImpl implements Flow {
         return ret;
     }
 
-    @SuppressWarnings("unchecked")
     private FlowOutcome handleResolution(String resolutionName,
             FlowOutcomeImpl previousFlowResolution) {
 
@@ -317,7 +318,6 @@ public class FlowImpl implements Flow {
      * @param source
      * @return
      */
-    @SuppressWarnings("unchecked")
     private Transition getTransition(String resolutionName, FlowStep source) {
 
         Transition destination = null;

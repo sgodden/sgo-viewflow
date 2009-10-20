@@ -31,6 +31,8 @@ import org.sgodden.viewflow.ModelListener;
 public class DefaultMessageModel 
 		implements MessageModel {
 
+	private static final long serialVersionUID = 20091020L;
+	
 	List<Message> messages = new ArrayList<Message>();
 	List<ModelListener> listeners = new ArrayList<ModelListener>();
 	Map<String, List<Message>> messagesByAttributePath = new HashMap<String, List<Message>>();
