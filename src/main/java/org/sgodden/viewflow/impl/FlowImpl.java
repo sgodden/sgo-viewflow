@@ -86,6 +86,10 @@ public class FlowImpl implements Flow {
             flowStepConfigurations.put(step.getName(), step);
         }
     }
+    
+    public Map < String, FlowStep > getStepsByName() {
+    	return flowStepConfigurations;
+    }
 
     /**
      * Sets the factory which will create participant objects.
