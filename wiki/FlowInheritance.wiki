@@ -65,15 +65,19 @@ class SubFlow extends SuperFlow {
 
     SubFlow(){
         super();
+        // insert a new step
         stepsByName['subFoo'] = [
             name: 'subFoo',
             viewName: 'subFooView'
         ];
 
+        // remove a step
         stepsByName.remove('foo2');
 
+        // remove a specific transition from a step
         stepsByName['foo'].transitionsByName.remove('toBeRemovedBySubFlow');
 
+        // add a new transition to a step
         stepsByName['foo'].transitionsByName['insertedBySubFlow'] = [
             [on: 'subFlowFoo', to: 'subFlowBar']
         ];
