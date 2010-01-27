@@ -116,6 +116,14 @@ public class FlowImpl implements Flow {
     public void setNamedObjects(Map < String, String > namedObjects) {
         this.namedObjects = namedObjects;
     }
+    
+    /**
+     * Gets the map of named objects that will be used to provide view and controller implementations.
+     * @return namedObjects the set of managed objects.
+     */
+    public Map <String, String> getNamedObjects(){
+    	return this.namedObjects;
+    }
 
     /**
      * Sets the name of the initial step to be invoked.
