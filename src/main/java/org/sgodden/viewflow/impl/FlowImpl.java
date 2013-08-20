@@ -346,6 +346,7 @@ public class FlowImpl implements Flow {
             throw new IllegalArgumentException(
                     "No valid destination could be found: "
                             + resolutionName
+                            + ";  current step is: " + (source == null ? "null" : source.getName())
                             + "; Flow resolution factory class name: "
                             + this.getClass().getName());
         }
